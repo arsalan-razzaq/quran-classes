@@ -1,0 +1,237 @@
+<header class="header  " [class.scrolled]="isScrolled"> 
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-between">
+                <div>
+                    <span class="me-3"><i class="fa-solid fa-envelope ms-1 me-2"></i> Live Chat</span>
+                    <span class="ms-3 "><i class="fa-solid fa-envelope ms-1 me-2"></i> info@quranclassforkids.com</span>
+                </div>
+                <div>
+                    <span class="ms-2 me-3 clickable" (click)="openContactOptions(no_opn)">
+                        <i class="fa-solid fa-phone ms-1 me-2"></i> UK +44 747 684 0096
+                    </span>
+                    <span class="ms-2 me-3 clickable" (click)="openContactOptions(no_opn)">
+                        <i class="fa-solid fa-phone ms-1 me-2"></i> USA +1 (312) 910-5328
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <header class="main-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-between">
+                <a href="#" class="logo">
+                    <img src="../../../assets/images/logo.png" alt="Design Class Logo">
+                </a>
+                <nav>
+                    <input type="checkbox" id="menu-checkbox">
+                    <label for="menu-checkbox" class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul class="nav-menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">COURSES</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</header> -->
+
+<div class="header-bottom" bis_skin_checked="1">
+    <div class="container" bis_skin_checked="1">
+        <div class="row align-items-center " bis_skin_checked="1">
+            <div class="col-md-3 col-9" bis_skin_checked="1">
+                <div class="header-logo" bis_skin_checked="1">
+                    <a href="https://www.quranmasteronline.com/">
+                        <img width="auto" height="auto" src="../../../assets/images/logo.png" alt="Logo"> </a>
+                </div>
+            </div>
+            <div class="col-md-9 col-3" bis_skin_checked="1">
+                <div class="header-menu" bis_skin_checked="1">
+                    <ul>
+                        <li class="">
+                            <a href="https://www.quranmasteronline.com/">
+                                <i class="fas fa-home"></i>
+                                <p>Home</p> <span>Welcome Page</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a >
+                                <i class="fas fa-users"></i>
+                                <p>About Us</p> <span>Who We Are</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="https://www.quranmasteronline.com/courses">
+                                <i class="fas fa-book"></i>
+                                <p>Courses</p> <span>What We Offer</span>
+                            </a>
+                            <div class="menu-drop" bis_skin_checked="1">
+                                <ul>
+                                    <li> <a routerLink="/Course_Detail">
+                                            <img width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-01.png?updatedAt=1633601850952"
+                                                alt="Ayat">
+                                            Tajweed
+                                        </a>
+                                    </li>
+                                    <li class="sub-drop-li">
+                                        <a routerLink="/Course_Detail" >
+                                            <img width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-02.png?updatedAt=1633601851193"
+                                                alt="Ayat">
+                                            Quran Reading
+                                        </a>
+                                        <div class="menu-drop" bis_skin_checked="1">
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                    routerLink="/Course_Detail">
+                                                        <img width="auto" height="auto"
+                                                            src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/new/icons-04.svg?updatedAt=1633601850501"
+                                                            alt="Ayat"> Online Quran for Kids </a>
+                                                </li>
+                                                <li> <a
+                                                    routerLink="/Course_Detail">
+                                                        <img width="auto" height="auto"
+                                                            src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-03.png?updatedAt=1633601850501"
+                                                            alt="Ayat"> Online Quran for Adults </a> </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sub-drop-li"> <a routerLink="/Course_Detail"> <img width="auto"
+                                                height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-03.png?updatedAt=1633601850501"
+                                                alt="Ayat"> Memorization </a>
+                                        
+                                    </li>
+                                    <li> <a routerLink="/Course_Detail"> <img
+                                                width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/new/icons-06.svg?updatedAt=1633601850501"
+                                                alt="Ayat"> Learn Qaida Online </a> </li>
+                                    <li> <a routerLink="/Course_Detail"> <img
+                                                width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/new/icons-08.svg?updatedAt=1633601850501"
+                                                alt="Ayat"> Language Courses </a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a routerLink="/Price-Plan"> <i class="far fa-credit-card"></i>
+                                <p>Pricing</p> <span>Start Free Trial</span>
+                            </a>
+                        </li>
+                   
+                        <li class=""> <a href="https://www.quranmasteronline.com/contact"> <i
+                                    class="fas fa-phone-alt"></i>
+                                <p>Contact</p> <span>For Quick Quieres</span>
+                            </a> </li>
+                        <li class="active">
+                            <a href="https://www.quranmasteronline.com/courses">
+                                <i class="fas fa-book"></i>
+                                <p>More</p> <span>Explore Policys</span>
+                            </a>
+                            <div class="menu-drop" bis_skin_checked="1">
+                                <ul>
+                                    <li> <a href="https://www.quranmasteronline.com/courses/tajweed">
+                                            <img width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-01.png?updatedAt=1633601850952"
+                                                alt="Ayat">
+                                            FAQ's
+                                        </a>
+                                    </li>
+                                    <li> <a href="https://www.quranmasteronline.com/courses/tajweed">
+                                            <img width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-01.png?updatedAt=1633601850952"
+                                                alt="Ayat">
+                                            Blogs
+                                        </a>
+                                    </li>
+                                    <li> <a href="https://www.quranmasteronline.com/courses/tajweed">
+                                            <img width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-01.png?updatedAt=1633601850952"
+                                                alt="Ayat">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li> <a href="https://www.quranmasteronline.com/courses/tajweed">
+                                            <img width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-01.png?updatedAt=1633601850952"
+                                                alt="Ayat">
+                                            Refund Policy
+                                        </a>
+                                    </li>
+                                    <li> <a href="https://www.quranmasteronline.com/courses/tajweed">
+                                            <img width="auto" height="auto"
+                                                src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-01.png?updatedAt=1633601850952"
+                                                alt="Ayat">
+                                            Terms & Condition
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-menu-btn" bis_skin_checked="1"> <i class="fas fa-bars"></i> </div>
+            </div>
+        </div>
+    </div>
+    <div class="mob-menu" bis_skin_checked="1">
+        <ul>
+            <li> <a href="https://www.quranmasteronline.com/">Home</a> </li>
+            <li> <a href="https://www.quranmasteronline.com/about">About Us</a> </li>
+            <li> <a href="https://www.quranmasteronline.com/courses">Courses</a> </li>
+            <li> <a href="https://www.quranmasteronline.com/pricing">Pricing</a> </li>
+            <li> <a href="https://www.quranmasteronline.com/hifz2">Play &amp; Learn</a> </li>
+            <li> <a href="https://www.quranmasteronline.com/contact">Contact</a> </li>
+            <li> <a href="skype:quranmasteronline?chat"><i class="fab fa-skype"></i>quranmasteronline</a> </li>
+            <li> <a href="tel:(732) 648-2727"><i class="fas fa-phone-alt"></i>USA: (732) 648-2727</a> </li>
+            <li> <a href="tel:+44 2071 931528"><i class="fas fa-phone-alt"></i>UK: +44 2071 931528</a> </li>
+            <!--<li> <a href="tel:+44 7520 621730"><i class="fas fa-phone-alt"></i>UK: +44 7520 621730</a> </li>-->
+        </ul>
+    </div>
+</div>
+</header>
+
+<ng-template #no_opn let-modal>
+    <div class="signup-popup show-popup" bis_skin_checked="1">
+        <div class="signup-popup-cross" bis_skin_checked="1"><i class="fas fa-times" (click)="close()"></i></div>
+        <!-- <img width="auto" height="auto" src="images/home/banner1.png" alt="Boy" class="signup-popup-img"> -->
+        <form class="contact-form" id="contact-form" type="POST">
+            <div class="row" bis_skin_checked="1">
+                <div class="col-12" bis_skin_checked="1"> 
+                    <img width="auto" height="auto" loading="lazy"
+                        src="https://ik.imagekit.io/quranmasteronline/assets/images/ayat/3.png?updatedAt=1631284275090"
+                        alt="Ayat">
+                        <h3>Select Your Preferred Contact Method</h3>
+                        <p>Please let us know how you would like to get in touch. Would you prefer to contact us via a phone call or WhatsApp? We are here to assist you!</p>
+                        
+                </div>
+     
+                <div class="col-12 d-flex justify-content-between" bis_skin_checked="1">  
+                    <button class="call_btn" (click)="makeCall()">Call</button>
+                    <button class="call_btn" (click)="openWhatsApp()">WhatsApp</button>
+                </div>
+                
+                
+            </div>
+        </form>
+    </div>
+
+
+
+</ng-template>

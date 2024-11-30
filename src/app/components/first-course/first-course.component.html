@@ -1,0 +1,95 @@
+<section class="white-section pricing-sec pricingseccoursepage">
+    <div class="container" bis_skin_checked="1">
+        <div class="row" bis_skin_checked="1">
+            <div class="col-12" bis_skin_checked="1">
+                <div class="tab-content" bis_skin_checked="1">
+                    <div id="tajweed-model-course" class="tab-pane active" bis_skin_checked="1">
+                        <div class="single-inner-course-area" bis_skin_checked="1">
+                            <div class="row" bis_skin_checked="1">
+                                <div class="col-lg-6" bis_skin_checked="1">
+                                    <div class="section-heading small-img-head" bis_skin_checked="1"> <img width="auto"
+                                            height="auto" loading="lazy"
+                                            src="https://ik.imagekit.io/quranmasteronline/assets/images/third-sec/icons-01.png?updatedAt=1633601850952"
+                                            alt="Ayat" class="heading-ayat-img">
+                                        <h2>Learn Tajweed</h2>
+                                        <p>Quran Class For Kids offers the Quran Tajweed learning through its
+                                            professional tajweed teachers. If you know how to read the Quran and intend
+                                            to augment your Tajweed skills, You are at the right place as we would drive
+                                            your interest towards the expertise in the Holy Quran.</p>
+                                        <div class="small-link-area" bis_skin_checked="1"> <a  (click)="modal0_open(level_modal)"
+                                                class="filled-link signup-popup-btn">Get Enrolled Now</a> <a
+                                               
+                                                class="simple-link">More Details <i
+                                                    class="fas fa-long-arrow-alt-right"></i></a> </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" bis_skin_checked="1"> <img width="auto" height="auto"
+                                        loading="lazy" src="../../../assets/images/Quran Reading With Tajweed.jpg"
+                                        alt="Quran Reading With Tajweed" class="course-side-img"> </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<ng-template #level_modal let-modal>
+    <div class="signup-popup show-popup" bis_skin_checked="1">
+        <div class="signup-popup-cross" bis_skin_checked="1"><i class="fas fa-times" (click)="modal_dis()"></i></div>
+        <!-- <img width="auto" height="auto" src="images/home/banner1.png" alt="Boy" class="signup-popup-img"> -->
+        <form class="contact-form" id="contact-form" type="POST">
+            <div class="row" bis_skin_checked="1">
+                <div class="col-12" bis_skin_checked="1"> <img width="auto" height="auto" loading="lazy"
+                        src="https://ik.imagekit.io/quranmasteronline/assets/images/ayat/3.png?updatedAt=1631284275090"
+                        alt="Ayat">
+                    <h3>Start Your 7 Day Trial</h3>
+                    <p>Get Enrolled Now and find some special and amazing discounts</p>
+                </div>
+                <div class="col-12" bis_skin_checked="1">
+                    <div class="second-form-input" bis_skin_checked="1"> <i class="far fa-user"></i> <input type="text"
+                            placeholder="Full Name or Student Name" name="name" required=""> </div>
+                    <div class="second-form-input" bis_skin_checked="1"> <i class="fas fa-envelope"></i> <input
+                            type="email" placeholder="Your Email (xyz@gmail.com)" name="email" required=""> </div>
+                    <div class="second-form-input" bis_skin_checked="1">
+                        <div class="iti iti--allow-dropdown iti--show-flags" bis_skin_checked="1">
+                            <div class="iti__flag-container" bis_skin_checked="1">
+                                <div class="iti__selected-flag" role="combobox" aria-haspopup="listbox"
+                                    aria-controls="iti-2__country-listbox" aria-expanded="false"
+                                    aria-label="Telephone country code" tabindex="0" title="Pakistan (‫پاکستان‬‎): +92"
+                                    bis_skin_checked="1">
+                                    <div class="iti__flag iti__pk" bis_skin_checked="1"></div>
+                                    <div class="iti__arrow" bis_skin_checked="1"></div>
+                                </div>
+                                 
+                            </div><input type="number" id="phone-signup" min="0" placeholder="Phone" name="number"
+                                required="" autocomplete="off" data-intl-tel-input-id="2"><input type="hidden"
+                                name="full">
+                        </div>
+                    </div>
+                    <div class="second-form-input" bis_skin_checked="1"> <textarea
+                            placeholder="Any questions or concerns (Skype ID *if any)" name="message"
+                            required=""></textarea> </div>
+                </div>
+                <div class="col-12" bis_skin_checked="1"> <input type="hidden" class="txt_csrfname"
+                        name="csrf_test_name" value="8223901383530278758248b4e446ba69"> <input type="submit"
+                        value="Get Enrolled Now" class="second-form-submit"> </div>
+                <div class="success-box" style="display:none;width:100%" bis_skin_checked="1">
+                    <div class="alert alert-success" bis_skin_checked="1">
+                        <p class="form-messege">Congratulations. Your message has been sent successfully.</p>
+                    </div>
+                </div>
+                <div class="error-box" style="display:none;width:100%" bis_skin_checked="1">
+                    <div class="alert alert-warning" bis_skin_checked="1">
+                        <p class="form-messege">Error, please retry. Your message has not been sent.</p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</ng-template>

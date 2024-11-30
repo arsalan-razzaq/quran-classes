@@ -1,0 +1,729 @@
+body {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #000
+}
+
+body::-webkit-scrollbar {
+    width: 9px
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #098a46
+}
+
+p:last-of-type {
+    margin-bottom: 0
+}
+
+.white-section {
+    padding: 80px 0
+}
+
+.heading-ayat-img {
+    max-height: 95px;
+    margin: 0 0 10px;
+    max-width: 100%
+}
+
+.section-heading h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0 0 47px 0;
+    margin: 0
+}
+
+.section-heading h2::before {
+    content: '';
+    position: absolute;
+    width: 155px;
+    height: 47px;
+    background: url(https://ik.imagekit.io/quranmasteronline/assets/images/ornament/ornament-green.svg?updatedAt=1631276034326);
+    background-size: contain;
+    bottom: 0;
+    left: 0
+}
+
+.section-heading p {
+    color: #7b7b7b;
+    line-height: 1.4;
+    font-size: 18px
+}
+
+.single-course {
+    box-shadow: 0 0 15px #cccccc73;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px 10px 0 10px
+}
+
+.single-course img {
+    width: 100%;
+    border-radius: 4px 4px 0 0
+}
+
+.single-course-link a.filled-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px
+}
+
+.single-course-link a.right-link {
+    display: inline-block;
+    color: #098a46;
+    padding: 8px 0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px
+}
+
+.courses-section {
+    position: relative
+}
+
+.courses-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(https://ik.imagekit.io/quranmasteronline/assets/images/course/bg.jpg?updatedAt=1631286599270) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 650px
+}
+
+.single-course-link a.filled-link,
+.small-link-area a.filled-link {
+    box-shadow: inset 0 0 0 60px #098a46;
+    transition: all .3s ease;
+    background: #10713e
+}
+
+.filled-link:hover {
+    box-shadow: inset 0 0 0 0 #098a46 !important
+}
+
+.pricing-sec {
+    position: relative;
+    background: #f8f8f8
+}
+
+.pricing-sec>.container,
+.pricing-sec>section>.container {
+    position: relative;
+    z-index: 1
+}
+
+.pricing-sec::after,
+.pricing-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 465px;
+    height: 100%;
+    background: url(https://ik.imagekit.io/quranmasteronline/assets/images/pricing/pricing-side.jpg?updatedAt=1631624438015) repeat-y;
+    background-size: contain;
+    transform: scaleX(-1)
+}
+
+.pricing-sec::after {
+    left: auto;
+    right: 0;
+    transform: scaleX(1)
+}
+
+.single-pricing-head {
+    position: relative
+}
+
+.single-pricing-head img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    max-height: 85px;
+    filter: grayscale(1);
+    opacity: .6;
+    transition: all .3s
+}
+
+.pricing-area-head {
+    padding: 40px 0
+}
+
+.pricing-area-head h3 {
+    font-size: 24px;
+    font-weight: 700
+}
+
+.pricing-area-head p {
+    color: #7b7b7b;
+    line-height: 1.4;
+    font-size: 18px
+}
+
+.single-pricing-body {
+    background: #fff;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+    transition: all .3s;
+    border-radius: 0 0 4px 4px
+}
+
+.single-pricing-body h5 {
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 15px;
+    z-index: 1;
+    margin: 0;
+    background: #eee;
+    font-weight: 600;
+    transition: all .3s
+}
+
+.single-inner-pricing {
+    position: relative;
+    padding: 0 30px 45px
+}
+
+.single-inner-pricing h3 {
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+    transition: all .3s
+}
+
+.col-lg-3:not(:first-child)>.single-pricing .single-inner-pricing h3 {
+    padding: 24.5px 0
+}
+
+.single-inner-pricing h3 p {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 5px 0 0;
+    min-height: 14px
+}
+
+.single-inner-pricing a {
+    display: inline-block;
+    border: 1px solid #a7a7a7;
+    color: #757575;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 13px;
+    left: 50%;
+    text-decoration: none;
+    transform: translateX(-50%);
+    transition: all .3s;
+    border-radius: 4px
+}
+
+.single-pricing {
+    position: relative;
+    transition: all .3s
+}
+
+.single-pricing:hover {
+    transform: scale(1.1)
+}
+
+.single-pricing:hover .single-pricing-head img {
+    filter: grayscale(0);
+    opacity: 1
+}
+
+.single-pricing:hover .single-pricing-body {
+    background: #098a46
+}
+
+.single-pricing:hover .single-pricing-body h5 {
+    background: #10753f;
+    color: #fff
+}
+
+.single-pricing:hover .single-inner-pricing h3 {
+    border-bottom: 1px solid #fff;
+    color: #fff
+}
+
+.single-pricing:hover .single-inner-pricing a {
+    border-color: #fff;
+    color: #fff
+}
+
+.pricing-row:not(.justify-content-center)>.col-lg-3:nth-child(3)>.single-pricing .single-pricing-head:before {
+    content: '';
+    position: absolute;
+    right: 5%;
+    top: 65%;
+    width: 30px;
+    height: 115px;
+    background: url(https://ik.imagekit.io/quranmasteronline/assets/images/pricing/recommended.png?ik-sdk-version=javascript-1.4.3&updatedAt=1650355510488) no-repeat center center;
+    background-size: contain;
+    z-index: 2;
+    border-radius: 0 60px 0 0
+}
+
+.small-img-head .heading-ayat-img {
+    max-height: 65px
+}
+
+.small-link-area {
+    margin-top: 15px
+}
+
+.small-link-area a.filled-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 4px
+}
+
+.small-link-area a+a {
+    margin-left: 15px
+}
+
+.small-link-area a.simple-link {
+    display: inline-block;
+    color: #098a46;
+    padding: 8px 0;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.course-side-img {
+    width: 100%
+}
+
+.single-inner-course-area+.single-inner-course-area {
+    margin-top: 80px
+}
+
+.signup-popup,
+.signup-popup2 {
+    position: fixed;
+    width: 100%;
+    max-width: 500px;
+    background: url(https://ik.imagekit.io/quranmasteronline/assets/images/testimonial/testimonial-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 40px 60px;
+    text-align: center;
+    z-index: 105;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 4px;
+     transition: all .3s
+}
+
+.signup-popup .col-12 img,
+.signup-popup2 .col-12 img {
+    max-height: 70px;
+    margin: 0 0 10px;
+    max-width: 100%
+}
+
+.signup-popup h3,
+.signup-popup2 h3 {
+    font-size: 30px;
+    font-weight: 700
+}
+
+.signup-popup p,
+.signup-popup2 p {
+    font-size: 14px;
+    max-width: 305px;
+    margin: 0 auto 20px auto;
+    line-height: 1.3
+}
+
+.signup-popup-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    transform: translate(25%, 25%);
+    z-index: -1;
+    opacity: .6
+}
+
+:checked+.single-step-select {
+    transform: scale(1.1)
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-transform: scale(1)
+    }
+
+    75% {
+        -webkit-transform: scale(1.25);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: scale(1.5);
+        opacity: 0
+    }
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1)
+    }
+
+    75% {
+        transform: scale(1.25);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0
+    }
+}
+
+.right-btn-side {
+    padding-left: 7px
+}
+
+@keyframes dotElasticBefore {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    25% {
+        transform: scale(1, 1.5)
+    }
+
+    50% {
+        transform: scale(1, .67)
+    }
+
+    75% {
+        transform: scale(1, 1)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+@keyframes dotElastic {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    25% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1, 1.5)
+    }
+
+    75% {
+        transform: scale(1, 1)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+@keyframes dotElasticAfter {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    25% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1, .67)
+    }
+
+    75% {
+        transform: scale(1, 1.5)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+.pricing-row:not(:hover)>.col-lg-3:nth-child(3)>.single-pricing .single-pricing-head img {
+    filter: grayscale(0);
+    opacity: 1
+}
+
+.pricing-row:not(:hover)>.col-lg-3:nth-child(3)>.single-pricing .single-pricing-body {
+    background: #098a46
+}
+
+.pricing-row:not(:hover)>.col-lg-3:nth-child(3)>.single-pricing .single-pricing-body h5 {
+    background: #10753f;
+    color: #fff
+}
+
+.pricing-row:not(:hover)>.col-lg-3:nth-child(3)>.single-pricing .single-inner-pricing h3 {
+    border-bottom: 1px solid #fff;
+    color: #fff
+}
+
+.pricing-row:not(:hover)>.col-lg-3:nth-child(3)>.single-pricing .single-inner-pricing a {
+    border-color: #fff;
+    color: #fff
+}
+
+.pricing-sec>section>.container .pricing-area-head {
+    display: none
+}
+
+@media (min-width:768px) {
+    .pricing-row:not(:hover)>.col-lg-3:nth-child(3)>.single-pricing {
+        transform: scale(1.1)
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container,
+    .container-lg {
+        max-width: 1090px
+    }
+}
+
+@media (max-width:1100px) and (min-width:577px) {
+    .single-inner-pricing a {
+        padding: 10px 20px
+    }
+
+    .single-course-link a.filled-link,
+    .single-course-link a.right-link {
+        font-size: 12px
+    }
+
+    .heading-ayat-img {
+        max-height: 80px
+    }
+}
+
+@media (max-width:992px) and (min-width:577px) {
+    .course-side-img {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 60px
+    }
+
+    .pricing-row:not(:hover)>.col-lg-3:nth-child(3)>.single-pricing {
+        transform: scale(1)
+    }
+
+    .pricing-row>.col-lg-3:nth-child(3)>.single-pricing,
+    .pricing-row>.col-lg-3:nth-child(4)>.single-pricing {
+        margin-top: 40px
+    }
+
+    .pricing-row:not(.justify-content-center)>.col-lg-3:nth-child(3)>.single-pricing .single-pricing-head:before {
+        right: 6%;
+        top: 66%
+    }
+
+    .col-lg-4:nth-child(3) .single-course,
+    .inner-side-course-area {
+        margin-top: 60px
+    }
+}
+
+@media (max-width:576px) {
+    body {
+        font-size: 14px
+    }
+
+    .pricing-sec::after,
+    .pricing-sec::before {
+        width: 40%;
+        height: 100%;
+        background-repeat: repeat-y
+    }
+
+    .single-pricing:hover {
+        transform: scale(1)
+    }
+
+    .heading-ayat-img,
+    .small-img-head .heading-ayat-img {
+        max-height: 45px
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        padding: 0 0 40px 0
+    }
+
+    .section-heading h2::before {
+        width: 132px;
+        height: 40px
+    }
+
+    .pricing-area-head p,
+    .section-heading p {
+        font-size: 15px
+    }
+
+    .col-lg-4:not(:first-child) .single-course {
+        margin-top: 15px
+    }
+
+    .pricing-area-head h3 {
+        font-size: 21px
+    }
+
+    .col-lg-3+.col-lg-3 .single-pricing {
+        margin-top: 40px
+    }
+
+    .signup-popup,
+    .signup-popup2 {
+        width: calc(100% - 30px);
+        padding: 40px 30px
+    }
+
+    .signup-popup h3,
+    .signup-popup2 h3 {
+        font-size: 25px;
+        font-weight: 700
+    }
+
+    .signup-popup .col-12 img,
+    .signup-popup2 .col-12 img {
+        max-height: 45px
+    }
+
+    .signup-popup-img,
+    .signup-popup2 .signup-popup-img {
+        max-width: 300px
+    }
+
+    .course-side-img {
+        margin-bottom: 30px
+    }
+
+    .pricingseccoursepage .course-side-img {
+        margin-bottom: 0;
+        margin-top: 30px
+    }
+
+    .small-img-head>img {
+        display: block;
+        margin: 10px auto
+    }
+
+    .small-img-head>h2 {
+        text-align: center
+    }
+
+    .small-img-head>h2::before {
+        left: 50%;
+        transform: translate(-50%)
+    }
+
+    :checked+.single-step-select {
+        transform: scale(1)
+    }
+
+    .pricing-row:not(.justify-content-center)>.col-lg-3:nth-child(3)>.single-pricing .single-pricing-head:before {
+        right: 6%;
+        top: 66%
+    }
+
+    .inner-side-course-area {
+        margin-top: 40px
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}

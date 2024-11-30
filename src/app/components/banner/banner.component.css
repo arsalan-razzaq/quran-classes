@@ -1,0 +1,1048 @@
+ body {
+     font-size: 16px;
+     font-family: Poppins, sans-serif;
+     font-weight: 400;
+     color: #000
+ }
+
+ body::-webkit-scrollbar {
+     width: 9px
+ }
+
+ body::-webkit-scrollbar-track {
+     background: #f1f1f1
+ }
+
+ body::-webkit-scrollbar-thumb {
+     background: #098a46
+ }
+
+ p:last-of-type {
+     margin-bottom: 0
+ }
+
+ .home-banner {
+     position: relative;
+     height: 100vh;
+     max-height: 550px;
+     background: url(https://ik.imagekit.io/quranmasteronline/assets/images/home/banner.jpg?updatedAt=1631275855356) no-repeat top center;
+     background-size: cover
+ }
+
+ .banner-center-container {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%)
+ }
+
+ .banner-heading {
+     color: #fff
+ }
+
+ .banner-heading h3 {
+     font-size: 28px;
+     margin: 0
+ }
+
+ .banner-heading h1 {
+     font-size: 42px;
+     font-weight: 600
+ }
+
+ .banner-heading p.after-head-p {
+     font-style: italic;
+     font-size: 19px;
+     font-weight: 300;
+     max-width: 425px;
+     line-height: 1.3
+ }
+
+ .banner-form {
+     margin-top: 20px;
+     width: 100%;
+     max-width: 350px
+ }
+
+ .banner-form input,
+ .banner-form select,
+ .banner-select-drop {
+     position: relative;
+     width: 100%;
+     padding: 10px 15px;
+     line-height: 1.5;
+     color: #495057;
+     background: #fff;
+     border: 0;
+     border-radius: 4px;
+     outline: 0;
+     height: 45px
+ }
+
+ .banner-select-dropdown {
+     position: absolute;
+     bottom: 0;
+     transform: translateY(100%);
+     width: 100%;
+     left: 0;
+     z-index: 1;
+     background: #fff;
+     display: none
+ }
+
+ .banner-select-dropdown a {
+     background: #fff;
+     padding: 10px 15px;
+     display: block;
+     color: #495057;
+     text-decoration: none
+ }
+
+ .banner-select-dropdown a:hover {
+     background-color: #f1f1f1
+ }
+
+ .banner-input-area {
+     position: relative
+ }
+
+ .banner-input-area::before {
+     content: '\f107';
+     font-family: "Font Awesome 5 Free";
+     position: absolute;
+     width: 55px;
+     height: 100%;
+     top: 0;
+     right: 0;
+     background: #098a46;
+     text-align: center;
+     border-radius: 0 4px 4px 0;
+     font-weight: 600;
+     color: #fff;
+     line-height: 45px;
+     font-size: 20px;
+     pointer-events: none;
+     z-index: 1
+ }
+
+ .banner-input-area:focus-within::before,
+ .banner-input-area:focus::before {
+     content: '\f106'
+ }
+
+ .banner-mini-text {
+     font-size: 12px;
+     margin-top: 10px;
+     color: #fff;
+     font-weight: 300
+ }
+
+ .home-banner-side {
+     width: calc(100% + 50px);
+     margin-left: -50px
+ }
+
+ .section-heading h2 {
+     position: relative;
+     font-size: 36px;
+     font-weight: 600;
+     padding: 0 0 47px 0;
+     margin: 0
+ }
+
+ .section-heading h2::before {
+     content: '';
+     position: absolute;
+     width: 155px;
+     height: 47px;
+     background: url(https://ik.imagekit.io/quranmasteronline/assets/images/ornament/ornament-green.svg?updatedAt=1631276034326);
+     background-size: contain;
+     bottom: 0;
+     left: 0
+ }
+
+ .section-heading.text-center h2::before {
+     left: 50%;
+     transform: translateX(-50%)
+ }
+
+ .section-heading p {
+     color: #7b7b7b;
+     line-height: 1.4;
+     font-size: 18px
+ }
+
+ .section-heading.text-center p {
+     max-width: 1000px;
+     margin-left: auto;
+     margin-right: auto
+ }
+
+ .courses-section {
+     position: relative
+ }
+
+ .courses-section::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: url(https://ik.imagekit.io/quranmasteronline/assets/images/course/bg.jpg?updatedAt=1631286599270) no-repeat center center;
+     background-size: cover;
+     width: 100%;
+     height: 100%;
+     max-height: 650px
+ }
+
+ :checked+.single-step-select {
+     transform: scale(1.1)
+ }
+
+ @-webkit-keyframes ripple {
+     0% {
+         -webkit-transform: scale(1)
+     }
+
+     75% {
+         -webkit-transform: scale(1.25);
+         opacity: 1
+     }
+
+     100% {
+         -webkit-transform: scale(1.5);
+         opacity: 0
+     }
+ }
+
+ @keyframes ripple {
+     0% {
+         transform: scale(1)
+     }
+
+     75% {
+         transform: scale(1.25);
+         opacity: 1
+     }
+
+     100% {
+         transform: scale(1.5);
+         opacity: 0
+     }
+ }
+
+ @keyframes dotElasticBefore {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1.5)
+     }
+
+     50% {
+         transform: scale(1, .67)
+     }
+
+     75% {
+         transform: scale(1, 1)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ @keyframes dotElastic {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1)
+     }
+
+     50% {
+         transform: scale(1, 1.5)
+     }
+
+     75% {
+         transform: scale(1, 1)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ @keyframes dotElasticAfter {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1)
+     }
+
+     50% {
+         transform: scale(1, .67)
+     }
+
+     75% {
+         transform: scale(1, 1.5)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ @media (min-width:1200px) {
+
+     .container,
+     .container-lg {
+         max-width: 1090px
+     }
+ }
+
+ @media (max-width:1100px) and (min-width:577px) {
+     .banner-heading h3 {
+         font-size: 25px
+     }
+
+     .banner-heading h1 {
+         font-size: 39px
+     }
+ }
+
+ @media (max-width:576px) and (min-width:400px) {
+     .enrolldiv>p {
+         width: calc(100% - 186px)
+     }
+ }
+
+ @media (max-width:992px) and (min-width:577px) {
+     .home-banner-side {
+         display: none
+     }
+
+     .home-banner {
+         text-align: center
+     }
+
+     .banner-heading p.after-head-p {
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 550px
+     }
+
+     .banner-form {
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 400px
+     }
+
+     .banner-select-drop {
+         text-align: left
+     }
+ }
+
+ @media (max-width:576px) {
+     body {
+         font-size: 14px
+     }
+
+     .home-banner-side {
+         display: none
+     }
+
+     .banner-heading h3 {
+         font-size: 20px
+     }
+
+     .banner-heading h1 {
+         font-size: 30px
+     }
+
+     .banner-mini-text {
+         font-size: 11px
+     }
+
+     .banner-heading p.after-head-p {
+         font-size: 15px
+     }
+
+     .section-heading h2 {
+         font-size: 28px;
+         padding: 0 0 40px 0
+     }
+
+     .section-heading h2::before {
+         width: 132px;
+         height: 40px
+     }
+
+     .section-heading p {
+         font-size: 15px
+     }
+
+     .form-row {
+         margin-bottom: 25px
+     }
+
+     :checked+.single-step-select {
+         transform: scale(1)
+     }
+ }
+
+ @media (max-width:365px) {
+     .enrolldiv>p {
+         padding: 10px 10px
+     }
+
+     .enrollform {
+         padding: 10px 8px
+     }
+ }
+
+ @-webkit-keyframes pulse {
+     0% {
+         transform: scale(1)
+     }
+
+     50% {
+         transform: scale(1.5)
+     }
+
+     to {
+         transform: scale(1);
+         opacity: 0
+     }
+ }
+
+ @keyframes pulse {
+     0% {
+         transform: scale(1)
+     }
+
+     50% {
+         transform: scale(1.5)
+     }
+
+     to {
+         transform: scale(1);
+         opacity: 0
+     }
+ }
+
+ @-webkit-keyframes fadeInDown {
+     from {
+         opacity: 0;
+         -webkit-transform: translate3d(0, -100%, 0);
+         transform: translate3d(0, -100%, 0)
+     }
+
+     to {
+         opacity: 1;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+     }
+ }
+
+ @keyframes fadeInDown {
+     from {
+         opacity: 0;
+         -webkit-transform: translate3d(0, -100%, 0);
+         transform: translate3d(0, -100%, 0)
+     }
+
+     to {
+         opacity: 1;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+     }
+ }
+
+ .enrolldiv {
+     display: flex;
+     /* width: 100%; */
+     background: #fff;
+     align-items: center;
+     border-radius: 4px;
+ }
+
+ .enrolldiv>p {
+     margin-right: 15px;
+     padding-top: 0;
+     font-weight: 400;
+     color: #495057;
+     margin-bottom: 0;
+     padding-left: 15px;
+     padding-right: 15px;
+     position: relative;
+     border-right: 1px solid #495057;
+ }
+
+ .enrollform {
+     display: block;
+     margin-bottom: 0px;
+     margin-right: 10px;
+     padding-top: 0px;
+     margin-bottom: 0;
+ }
+
+ .enrollform input {
+     padding: 0;
+     height: initial;
+     width: initial;
+     margin-bottom: 0;
+     display: none;
+     cursor: pointer;
+ }
+
+ .paper_fly_btn {
+     background: #7B7B7B;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     font-size: 16px;
+     border-radius: 7px;
+     position: relative;
+     overflow: hidden;
+     /* Ensures elements don't exceed button bounds */
+ }
+
+ .animated-icon {
+     position: relative;
+     display: inline-block;
+     transition: transform 0.5s ease, opacity 0.5s ease;
+ }
+
+ .paper_fly_btn:hover .animated-icon {
+     transform: translateX(20px) translateY(-10px) rotate(20deg);
+     opacity: 0;
+ }
+
+ .text-start {
+     position: absolute;
+     top: -50px;
+     /* Initially positioned above the button */
+     left: 50%;
+     transform: translateX(-50%);
+     opacity: 0;
+     transition: all 0.5s ease;
+ }
+
+ .paper_fly_btn:hover .text-start {
+     top: 20%;
+     /* Moves to the center of the button */
+     opacity: 1;
+ }
+
+
+
+ body {
+     font-size: 16px;
+     font-family: Poppins, sans-serif;
+     font-weight: 400;
+     color: #000
+ }
+
+ body::-webkit-scrollbar {
+     width: 9px
+ }
+
+ body::-webkit-scrollbar-track {
+     background: #f1f1f1
+ }
+
+ body::-webkit-scrollbar-thumb {
+     background: #098a46
+ }
+
+ p:last-of-type {
+     margin-bottom: 0
+ }
+
+ .heading-ayat-img {
+     max-height: 95px;
+     margin: 0 0 10px;
+     max-width: 100%
+ }
+
+ .section-heading h2 {
+     position: relative;
+     font-size: 36px;
+     font-weight: 600;
+     padding: 0 0 47px 0;
+     margin: 0
+ }
+
+ .section-heading h2::before {
+     content: '';
+     position: absolute;
+     width: 155px;
+     height: 47px;
+     background: url(https://ik.imagekit.io/quranmasteronline/assets/images/ornament/ornament-green.svg?updatedAt=1631276034326);
+     background-size: contain;
+     bottom: 0;
+     left: 0
+ }
+
+ .section-heading.text-center h2::before {
+     left: 50%;
+     transform: translateX(-50%)
+ }
+
+ .section-heading p {
+     color: #7b7b7b;
+     line-height: 1.4;
+     font-size: 18px
+ }
+
+ .section-heading.text-center p {
+     max-width: 1000px;
+     margin-left: auto;
+     margin-right: auto
+ }
+
+ .small-img-head .heading-ayat-img {
+     max-height: 65px
+ }
+
+ .step-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../../assets/images/step-bg.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  
+  .step-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 70% opacity */
+    z-index: -1;
+  }
+  
+  .step-center {
+    padding: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    border-radius: 10px;
+    position: relative;
+    z-index: 1; /* Ensure content is above the overlay */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+  }
+  
+ .single-step-select {
+     position: relative;
+     transition: all .3s;
+     display: block;
+     margin: 0;
+     cursor: pointer
+ }
+
+ .single-step-head {
+     position: relative;
+     text-align: center;
+     box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+     padding: 20px 15px;
+     border-radius: 4px 4px 0 0;
+     transition: all .3s;
+     background: #fff
+ }
+
+ .single-step-head:before {
+     content: "\f058";
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     font-family: "Font Awesome 5 Free";
+     color: #b1b1b1;
+     font-size: 35px;
+     opacity: .6;
+     transition: all .3s;
+     font-weight: 600
+ }
+
+ .single-step-head svg {
+     -webkit-filter: drop-shadow(0 0 8px rgb(0 0 0 / 10%));
+     filter: drop-shadow(0 0 8px rgb(0 0 0 / 10%))
+ }
+
+ .single-step-head img {
+     max-height: 95px;
+     transition: all .3s
+ }
+
+ .single-step-body {
+     background: #fff;
+     box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+     transition: all .3s;
+     text-align: center;
+     border-radius: 0 0 4px 4px
+ }
+
+ .single-step-body h5 {
+     position: relative;
+     font-size: 20px;
+     text-align: center;
+     padding: 10px 15px;
+     z-index: 1;
+     background: #098a46;
+     color: #fff;
+     font-weight: 600;
+     transition: all .3s;
+     margin: 0
+ }
+
+ .step-heading {
+     padding-bottom: 20px
+ }
+
+ .single-step:hover .single-step-body h5 {
+     background: #10753f
+ }
+
+ .single-step-body-detail {
+     padding: 20px 30px
+ }
+
+ .single-step-body-detail p {
+     font-size: 14px;
+     color: #7b7b7b;
+     line-height: 1.3;
+     margin-bottom: 5px;
+     font-weight: 500;
+     transition: all .3s
+ }
+
+ .single-step-hidden-input {
+     display: none
+ }
+
+ :checked+.single-step-select {
+     transform: scale(1.1)
+ }
+
+ :checked+.single-step-select .single-step-body h5 {
+     background: #10753f
+ }
+
+ :checked+.single-step-select .single-step-body,
+ :checked+.single-step-select .single-step-head {
+     background: #098a46
+ }
+
+ :checked+.single-step-select .single-step-body-detail p {
+     color: #fff
+ }
+
+ :checked+.single-step-select .single-step-head:before {
+     color: #fff;
+     font-weight: 600;
+     opacity: 1
+ }
+
+ @-webkit-keyframes ripple {
+     0% {
+         -webkit-transform: scale(1)
+     }
+
+     75% {
+         -webkit-transform: scale(1.25);
+         opacity: 1
+     }
+
+     100% {
+         -webkit-transform: scale(1.5);
+         opacity: 0
+     }
+ }
+
+ @keyframes ripple {
+     0% {
+         transform: scale(1)
+     }
+
+     75% {
+         transform: scale(1.25);
+         opacity: 1
+     }
+
+     100% {
+         transform: scale(1.5);
+         opacity: 0
+     }
+ }
+
+ .step-input {
+     width: 100%;
+     padding: 14px 25px 14px 25px;
+     outline: 0;
+     border: 1px solid #d7d7d7;
+     color: #4b4b4b;
+     margin-bottom: 14px;
+     border-radius: 4px;
+     height: auto;
+     font-size: 15px
+ }
+
+ .max-600 {
+     width: 100%;
+     max-width: 600px;
+     margin: 0 auto
+ }
+
+ .max-700 {
+     width: 100%;
+     max-width: 700px;
+     margin: 0 auto
+ }
+
+ .max-900 {
+     width: 100%;
+     max-width: 900px;
+     margin: 0 auto
+ }
+
+ @keyframes dotElasticBefore {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1.5)
+     }
+
+     50% {
+         transform: scale(1, .67)
+     }
+
+     75% {
+         transform: scale(1, 1)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ @keyframes dotElastic {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1)
+     }
+
+     50% {
+         transform: scale(1, 1.5)
+     }
+
+     75% {
+         transform: scale(1, 1)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ @keyframes dotElasticAfter {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1)
+     }
+
+     50% {
+         transform: scale(1, .67)
+     }
+
+     75% {
+         transform: scale(1, 1.5)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ @media (min-width:1800px) {
+     .single-step-body-detail p {
+         font-size: 16px
+     }
+ }
+
+ @media (min-width:1200px) {
+
+     .container,
+     .container-lg {
+         max-width: 1090px
+     }
+ }
+
+ @media (max-width:1100px) and (min-width:577px) {
+     .heading-ayat-img {
+         max-height: 80px
+     }
+ }
+
+ @media (max-width:576px) {
+     body {
+         font-size: 14px
+     }
+
+     .heading-ayat-img,
+     .small-img-head .heading-ayat-img {
+         max-height: 45px
+     }
+
+     .section-heading h2 {
+         font-size: 28px;
+         padding: 0 0 40px 0
+     }
+
+     .section-heading h2::before {
+         width: 132px;
+         height: 40px
+     }
+
+     .section-heading p {
+         font-size: 15px
+     }
+
+     .small-img-head>img {
+         display: block;
+         margin: 10px auto
+     }
+
+     .small-img-head>h2 {
+         text-align: center
+     }
+
+     .small-img-head>h2::before {
+         left: 50%;
+         transform: translate(-50%)
+     }
+
+     .step-container {
+         top: 70px;
+         height: calc(100% - 151px)
+     }
+
+     .col-lg-4:not(:first-child) .single-step-select {
+         margin-top: 15px
+     }
+
+     :checked+.single-step-select {
+         transform: scale(1)
+     }
+
+     .single-step-body h5 {
+         font-size: 17px
+     }
+
+     .single-step-head:before {
+         font-size: 30px
+     }
+ }
+
+ @-webkit-keyframes pulse {
+     0% {
+         transform: scale(1)
+     }
+
+     50% {
+         transform: scale(1.5)
+     }
+
+     to {
+         transform: scale(1);
+         opacity: 0
+     }
+ }
+
+ @keyframes pulse {
+     0% {
+         transform: scale(1)
+     }
+
+     50% {
+         transform: scale(1.5)
+     }
+
+     to {
+         transform: scale(1);
+         opacity: 0
+     }
+ }
+
+ @-webkit-keyframes fadeInDown {
+     from {
+         opacity: 0;
+         -webkit-transform: translate3d(0, -100%, 0);
+         transform: translate3d(0, -100%, 0)
+     }
+
+     to {
+         opacity: 1;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+     }
+ }
+
+ @keyframes fadeInDown {
+     from {
+         opacity: 0;
+         -webkit-transform: translate3d(0, -100%, 0);
+         transform: translate3d(0, -100%, 0)
+     }
+
+     to {
+         opacity: 1;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+     }
+ }
+
+ .modal_continue_btn{
+    background-color: #4b4b4b;
+    color: #ffff;
+    border: none;
+    text-align: center;
+
+ }
+ .modal_footer_btn{
+    background-color: #4b4b4b;
+    color: #fff;
+    border: none;
+    display: flex
+;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900; }
+
+    .explore_more_btn{
+        background-color: green;
+        color: #ffff;
+        border: none;
+        text-align: center;
+        padding: 15px;
+        border-radius: 12px;
+    
+    }

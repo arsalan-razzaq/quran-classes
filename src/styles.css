@@ -1,0 +1,593 @@
+ @font-face {
+     font-family: Nunito;
+     src: url(assets/fonts/Nunito/static/Nunito-Regular.ttf);
+ }
+
+ @font-face {
+     font-family: Rubik;
+     src: url(assets/fonts/Rubik/static/Rubik-Regular.ttf);
+ }
+
+ @font-face {
+     font-family: Poppins;
+     src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ span,
+ a,
+ li,
+ ol,
+ ul,
+ i {
+     font-family: Rubik;
+ }
+
+ body {
+     font-size: 16px;
+     font-family: Poppins, sans-serif;
+     font-weight: 400;
+     color: #000
+ }
+
+ body::-webkit-scrollbar {
+     width: 9px
+ }
+
+ body::-webkit-scrollbar-track {
+     background: #f1f1f1
+ }
+
+ body::-webkit-scrollbar-thumb {
+     background: #098a46
+ }
+
+ p:last-of-type {
+     margin-bottom: 0
+ }
+
+ ul {
+     list-style: none;
+     padding: 0;
+     margin: 0
+ }
+
+ .home-banner {
+     position: relative;
+     height: 100vh;
+     max-height: 550px;
+     background: url(https://ik.imagekit.io/quranmasteronline/assets/images/home/banner.jpg?updatedAt=1631275855356) no-repeat top center;
+     background-size: cover
+ }
+
+ .banner-form {
+     margin-top: 20px;
+     width: 100%;
+     max-width: 350px
+ }
+
+ .banner-form input {
+     position: relative;
+     width: 100%;
+     padding: 10px 15px;
+     line-height: 1.5;
+     color: #495057;
+     background: #fff;
+     border: 0;
+     border-radius: 4px;
+     outline: 0;
+     height: 45px
+ }
+
+ .second-form-input {
+     position: relative
+ }
+
+ .second-form-input input {
+     width: 100%;
+     height: 46px;
+     border-radius: 4px;
+     border: 0;
+     padding: 10px 15px 10px 40px;
+     outline: 0
+ }
+
+ .second-form-input textarea {
+     width: 100%;
+     height: 100px;
+     border-radius: 4px;
+     border: 0;
+     padding: 10px 15px;
+     outline: 0;
+     resize: none
+ }
+
+ .second-form-input input::placeholder,
+ .second-form-input textarea::placeholder {
+     color: #bbb;
+     font-weight: 500
+ }
+
+ .second-form-input i {
+     position: absolute;
+     left: 15px;
+     top: 50%;
+     font-weight: 900;
+     transform: translateY(-50%) scale(.9);
+     color: #098a46;
+     transition: all .3s
+ }
+
+ .second-form-input+.second-form-input {
+     margin-top: 15px
+ }
+
+ .second-form-submit {
+     padding: 8px 20px;
+     background: 0 0;
+     margin-top: 25px;
+     border: 1px solid #fff;
+     border-radius: 2px;
+     color: #fff;
+     font-size: 14px
+ }
+
+ .contact-form-submit {
+     box-shadow: inset 0 0 0 60px #098a46;
+     transition: all .3s ease;
+     background: #10713e
+ }
+
+ .contact-form-submit:hover {
+     box-shadow: inset 0 0 0 0 #098a46 !important
+ }
+
+ .contact-form-input {
+     margin-bottom: 10px;
+     position: relative
+ }
+
+ .contact-form-input input {
+     width: 100%;
+     padding: 10px 15px 10px 40px;
+     font-weight: 400;
+     outline: 0;
+     border: 1px solid #d7d7d7;
+     color: #4b4b4b;
+     border-radius: 4px;
+     font-size: 14px
+ }
+
+ .contact-form-input i {
+     position: absolute;
+     left: 15px;
+     top: 50%;
+     font-weight: 900;
+     transform: translateY(-50%) scale(.9);
+     color: #098a46;
+     transition: all .3s
+ }
+
+ .contact-form-textarea {
+     width: 100%;
+     padding: 10px 15px;
+     font-weight: 400;
+     outline: 0;
+     border: 1px solid #d7d7d7;
+     color: #4b4b4b;
+     height: 125px;
+     resize: none;
+     border-radius: 4px;
+     font-size: 14px
+ }
+
+ .contact-form-submit {
+     display: inline-block;
+     text-decoration: none;
+     background: #10713e;
+     color: #fff;
+     padding: 10px 30px;
+     border-radius: 4px;
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 500;
+     border: 0
+ }
+
+ .contact-banner {
+     background: url(https://ik.imagekit.io/quranmasteronline/assets/images/contact/contact-bg.jpg?updatedAt=1631629552447) no-repeat center center;
+     background-size: cover
+ }
+
+ .signup-popup-bg,
+ .signup-popup-bg2 {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background: rgba(0, 0, 0, .6);
+     z-index: 104;
+     opacity: 0;
+     visibility: hidden;
+     transition: all .3s
+ }
+
+ .signup-popup,
+ .signup-popup2 {
+     position: fixed;
+     width: 100%;
+     max-width: 500px;
+     background: url(https://ik.imagekit.io/quranmasteronline/assets/images/testimonial/testimonial-bg.jpg) no-repeat center center;
+     background-size: cover;
+     padding: 40px 60px;
+     text-align: center;
+     z-index: 105;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+      border-radius: 4px;
+      visibility: hidden;
+     transition: all .3s
+ }
+
+ .signup-popup .alert,
+ .signup-popup2 .alert {
+     margin: 14px 0 0
+ }
+
+ .signup-popup .alert p,
+ .signup-popup2 .alert p {
+     margin-bottom: 0
+ }
+
+ .signup-popup .col-12 img,
+ .signup-popup2 .col-12 img {
+     max-height: 70px;
+     margin: 0 0 10px;
+     max-width: 100%
+ }
+
+ .signup-popup h3,
+ .signup-popup2 h3 {
+     font-size: 30px;
+     font-weight: 700
+ }
+
+ .signup-popup p,
+ .signup-popup2 p {
+     font-size: 14px;
+     max-width: 305px;
+     margin: 0 auto 20px auto;
+     line-height: 1.3
+ }
+
+ .signup-popup .second-form-input input,
+ .signup-popup .second-form-input textarea,
+ .signup-popup2 .second-form-input input,
+ .signup-popup2 .second-form-input textarea {
+     font-size: 14px;
+     border: 1px solid #ccc
+ }
+
+ .signup-popup .second-form-submit,
+ .signup-popup2 .second-form-submit {
+     width: 100%;
+     background: #098a46;
+     margin-top: 10px;
+     border: 1px solid #098a46
+ }
+
+ .signup-popup-img {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     max-width: 400px;
+     transform: translate(25%, 25%);
+     z-index: -1;
+     opacity: .6
+ }
+
+ .signup-popup-cross,
+ .signup-popup-cross2 {
+     position: absolute;
+     right: 0;
+     top: 0;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     text-align: center;
+     color: #000;
+     cursor: pointer
+ }
+
+ .show-bg,
+ .show-popup {
+     opacity: 1;
+     visibility: visible
+ }
+
+ .mt-40 {
+     margin-top: 40px
+ }
+
+ .mt-80 {
+     margin-top: 80px
+ }
+
+ .mt-100 {
+     margin-top: 100px
+ }
+
+ :checked+.single-step-select {
+     transform: scale(1.1)
+ }
+
+ @-webkit-keyframes ripple {
+     0% {
+         -webkit-transform: scale(1)
+     }
+
+     75% {
+         -webkit-transform: scale(1.25);
+         opacity: 1
+     }
+
+     100% {
+         -webkit-transform: scale(1.5);
+         opacity: 0
+     }
+ }
+
+ @keyframes ripple {
+     0% {
+         transform: scale(1)
+     }
+
+     75% {
+         transform: scale(1.25);
+         opacity: 1
+     }
+
+     100% {
+         transform: scale(1.5);
+         opacity: 0
+     }
+ }
+
+ @keyframes dotElasticBefore {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1.5)
+     }
+
+     50% {
+         transform: scale(1, .67)
+     }
+
+     75% {
+         transform: scale(1, 1)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ @keyframes dotElastic {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1)
+     }
+
+     50% {
+         transform: scale(1, 1.5)
+     }
+
+     75% {
+         transform: scale(1, 1)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ @keyframes dotElasticAfter {
+     0% {
+         transform: scale(1, 1)
+     }
+
+     25% {
+         transform: scale(1, 1)
+     }
+
+     50% {
+         transform: scale(1, .67)
+     }
+
+     75% {
+         transform: scale(1, 1.5)
+     }
+
+     100% {
+         transform: scale(1, 1)
+     }
+ }
+
+ .show-bg,
+ .show-popup {
+     opacity: 1;
+     visibility: visible
+ }
+
+ .width-100per {
+     width: 100%
+ }
+
+ label.width-100per {
+     margin-bottom: 0
+ }
+
+ .iti--allow-dropdown .iti__flag-container {
+     right: auto;
+     left: 0
+ }
+
+ .iti input,
+ .iti input[type=tel],
+ .iti input[type=text] {
+     position: relative;
+     z-index: 0;
+     margin-top: 0 !important;
+     margin-right: 0
+ }
+
+ .iti {
+     width: 100%
+ }
+
+ .iti--allow-dropdown input,
+ .iti--allow-dropdown input[type=tel],
+ .iti--allow-dropdown input[type=text] {
+     padding-left: 52px
+ }
+
+ @media (min-width:1200px) {
+
+     .container,
+     .container-md,
+     .container-sm {
+         max-width: 1090px
+     }
+ }
+
+ @media (max-width:992px) and (min-width:577px) {
+     .home-banner {
+         text-align: center
+     }
+
+     .banner-form {
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 400px
+     }
+ }
+
+ @media (max-width:576px) {
+     body {
+         font-size: 14px
+     }
+
+     .contact-form {
+         margin-top: 30px
+     }
+
+     .signup-popup,
+     .signup-popup2 {
+         width: calc(100% - 30px);
+         padding: 40px 30px
+     }
+
+     .signup-popup h3,
+     .signup-popup2 h3 {
+         font-size: 25px;
+         font-weight: 700
+     }
+
+     .signup-popup .second-form-input input,
+     .signup-popup .second-form-input textarea,
+     .signup-popup2 .second-form-input input,
+     .signup-popup2 .second-form-input textarea {
+         font-size: 13px
+     }
+
+     .signup-popup .col-12 img,
+     .signup-popup2 .col-12 img {
+         max-height: 45px
+     }
+
+     .signup-popup-img,
+     .signup-popup2 .signup-popup-img {
+         max-width: 300px
+     }
+
+     .form-row {
+         margin-bottom: 25px
+     }
+
+     :checked+.single-step-select {
+         transform: scale(1)
+     }
+ }
+
+ @-webkit-keyframes pulse {
+     0% {
+         transform: scale(1)
+     }
+
+     50% {
+         transform: scale(1.5)
+     }
+
+     to {
+         transform: scale(1);
+         opacity: 0
+     }
+ }
+
+ @keyframes pulse {
+     0% {
+         transform: scale(1)
+     }
+
+     50% {
+         transform: scale(1.5)
+     }
+
+     to {
+         transform: scale(1);
+         opacity: 0
+     }
+ }
+
+ @-webkit-keyframes fadeInDown {
+     from {
+         opacity: 0;
+         -webkit-transform: translate3d(0, -100%, 0);
+         transform: translate3d(0, -100%, 0)
+     }
+
+     to {
+         opacity: 1;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+     }
+ }
+
+ @keyframes fadeInDown {
+     from {
+         opacity: 0;
+         -webkit-transform: translate3d(0, -100%, 0);
+         transform: translate3d(0, -100%, 0)
+     }
+
+     to {
+         opacity: 1;
+         -webkit-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0)
+     }
+ }

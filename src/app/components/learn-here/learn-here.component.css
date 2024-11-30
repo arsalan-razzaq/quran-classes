@@ -1,0 +1,397 @@
+body {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: #000
+}
+
+body::-webkit-scrollbar {
+    width: 9px
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #098a46
+}
+
+p:last-of-type {
+    margin-bottom: 0
+}
+
+.white-section {
+    padding: 80px 0
+}
+
+.heading-ayat-img {
+    max-height: 95px;
+    margin: 0 0 10px;
+    max-width: 100%
+}
+
+.section-heading h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0 0 47px 0;
+    margin: 0
+}
+
+.section-heading h2::before {
+    content: '';
+    position: absolute;
+    width: 155px;
+    height: 47px;
+    background: url(https://ik.imagekit.io/quranmasteronline/assets/images/ornament/ornament-green.svg?updatedAt=1631276034326);
+    background-size: contain;
+    bottom: 0;
+    left: 0
+}
+
+.section-heading.text-center h2::before {
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.section-heading p {
+    color: #7b7b7b;
+    line-height: 1.4;
+    font-size: 18px
+}
+
+.section-heading.text-center p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.ornament-section {
+    position: relative;
+    overflow: hidden
+}
+
+.ornament-section::after,
+.ornament-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-40%, -40%);
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    background: url(https://ik.imagekit.io/quranmasteronline/assets/images/ornament/ornament.png?updatedAt=1631628418186) no-repeat center center;
+    background-size: contain
+}
+
+.ornament-section::after {
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: translate(40%, 40%)
+}
+
+.service-area>.row {
+    margin: 0 -8px
+}
+
+.service-area>.row>.col-md-4,
+.service-area>.row>.col-md-6 {
+    padding: 0 8px
+}
+
+.single-service {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 15px #cccccc73;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 8px 0;
+    transition: all .3s
+}
+
+.service-img {
+    width: 70px
+}
+
+.service-img img {
+    width: 100%
+}
+
+.service-detail-area {
+    width: 100%;
+    max-width: calc(100% - 70px);
+    padding-left: 10px
+}
+
+.service-detail-area h3 {
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .3s
+}
+
+.service-detail-area p {
+    font-size: 14px;
+    line-height: 1.25;
+    color: #616161;
+    margin: 0 0 10px 0;
+    transition: all .3s
+}
+
+.service-detail-area p:last-child {
+    margin-bottom: 0
+}
+
+.service-detail-area a {
+    color: #098a46;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s
+}
+
+.single-service:hover {
+    background: #098a46
+}
+
+.single-service:hover a,
+.single-service:hover h3,
+.single-service:hover p {
+    color: #fff
+}
+
+.section-heading.white-text {
+    color: #fff
+}
+
+.section-heading.white-text p {
+    color: #ccc
+}
+
+.mb-40 {
+    margin-bottom: 40px
+}
+
+:checked+.single-step-select {
+    transform: scale(1.1)
+}
+
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-transform: scale(1)
+    }
+
+    75% {
+        -webkit-transform: scale(1.25);
+        opacity: 1
+    }
+
+    100% {
+        -webkit-transform: scale(1.5);
+        opacity: 0
+    }
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1)
+    }
+
+    75% {
+        transform: scale(1.25);
+        opacity: 1
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0
+    }
+}
+
+@keyframes dotElasticBefore {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    25% {
+        transform: scale(1, 1.5)
+    }
+
+    50% {
+        transform: scale(1, .67)
+    }
+
+    75% {
+        transform: scale(1, 1)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+@keyframes dotElastic {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    25% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1, 1.5)
+    }
+
+    75% {
+        transform: scale(1, 1)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+@keyframes dotElasticAfter {
+    0% {
+        transform: scale(1, 1)
+    }
+
+    25% {
+        transform: scale(1, 1)
+    }
+
+    50% {
+        transform: scale(1, .67)
+    }
+
+    75% {
+        transform: scale(1, 1.5)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container,
+    .container-lg,
+    .container-md {
+        max-width: 1090px
+    }
+}
+
+@media (max-width:1100px) and (min-width:577px) {
+    .service-img {
+        width: 60px
+    }
+
+    .service-detail-area {
+        max-width: calc(100% - 60px)
+    }
+
+    .heading-ayat-img {
+        max-height: 80px
+    }
+}
+
+@media (max-width:576px) {
+    body {
+        font-size: 14px
+    }
+
+    .heading-ayat-img {
+        max-height: 45px
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        padding: 0 0 40px 0
+    }
+
+    .section-heading h2::before {
+        width: 132px;
+        height: 40px
+    }
+
+    .section-heading p {
+        font-size: 15px
+    }
+
+    .ornament-section::after,
+    .ornament-section::before {
+        width: 200px;
+        height: 200px
+    }
+
+    .mb-40 {
+        margin-bottom: 30px
+    }
+
+    :checked+.single-step-select {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
